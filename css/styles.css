@@ -1,0 +1,32 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8em;
+  margin: 0px;
+  color: #666666;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  margin: 0 0 15px;
+  line-height: 1.4em;
+  font-family: 'Poppins', sans-serif;
+  color: #333333;
+}
+/* Navbar style  */
+.logo-text {
+  font-weight: 800;
+  font-size: 32px;
+}
+.navigation-container {
+  background-color:rgba(48,175,254,0.3);
+position: absolute;
+top: 0;
+left: 0;
+box-shadow: none;
+}
