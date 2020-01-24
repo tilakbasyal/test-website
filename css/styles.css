@@ -165,8 +165,10 @@ header {
 .download-text {
   padding: 120px 0px;
 }
- .download-section-image img{
-   margin-bottom: -100%;
+ .download-section-image{
+  background-image: url('../assets/phone-1-.png');
+  background-repeat: no-repeat;
+  height: 325px;
  }
 .icon img {
   height: 32px;
@@ -185,4 +187,51 @@ header {
 .app-store {
   font-size: 24px;
   font-weight: 600;
+}
+
+/* boxes  */
+.frequent-ask-again {
+  background-color: #f3f8fc;
+}
+.boxes-container {
+  display: flex;
+}
+.single-box {
+  position: relative;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 0 15px;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.rated {
+  color: gold;
+}
+.not-rated{
+  color: #dfdfdf;
+}
+.name {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.big-name-container .text {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+}
+
+.left-right-button {
+  height: 60px;
+  position: relative;
+  top: 25%;
+  background-color: #aaa;
+  color: #7b7474;
 }
