@@ -159,6 +159,14 @@ header {
 }
 
 /* Download the app  */
+ol li {
+  height: 12px !important;
+  border-radius: 50%;
+  width: 12px !important;
+  margin: 0 8px !important;
+  background-color: #666 !important;
+}
+
 .download-the-app {
   background-image: linear-gradient(to right,#4eaffd 0%, #4db5fd 51%, #00f1fd 100%);
 }
@@ -170,7 +178,7 @@ header {
   background-repeat: no-repeat;
   height: 325px;
  }
-.icon img {
+.store-icon img {
   height: 32px;
   margin: 12px 12px 0 0;
 }
