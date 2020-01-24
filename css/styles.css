@@ -18,6 +18,10 @@ h6 {
   font-family: 'Poppins', sans-serif;
   color: #333333;
 }
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 a:hover {
   text-decoration: none;
 }
@@ -65,11 +69,10 @@ header {
 .custom-checkbox label {
   font-size: 14px;
 }
-
-/* .video-container {
-  background-image: url('../assets/video-bg.jpg');
-
-} */
+.video-container img {
+  width: 100%;
+  object-fit: cover;
+}
 .video-text-container {
   position: relative;
 }
@@ -153,4 +156,33 @@ header {
   font-size: 18px;
   color: #666;
   box-shadow: 0 4px 4px #f2f2f2;
+}
+
+/* Download the app  */
+.download-the-app {
+  background-image: linear-gradient(to right,#4eaffd 0%, #4db5fd 51%, #00f1fd 100%);
+}
+.download-text {
+  padding: 120px 0px;
+}
+ .download-section-image img{
+   margin-bottom: -100%;
+ }
+.icon img {
+  height: 32px;
+  margin: 12px 12px 0 0;
+}
+.icon-button {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  border-radius: 8px;
+}
+.play-store {
+  margin-right: 16px;
+}
+.app-store {
+  font-size: 24px;
+  font-weight: 600;
 }
