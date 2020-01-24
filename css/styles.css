@@ -190,7 +190,7 @@ header {
 }
 
 /* boxes  */
-.frequent-ask-again {
+.frequent-ask-again, .footer, .footer li {
   background-color: #f3f8fc;
 }
 .boxes-container {
@@ -234,4 +234,13 @@ header {
   top: 25%;
   background-color: #aaa;
   color: #7b7474;
+}
+
+/* Footer  */
+.copyright, .social-media a {
+  color: #697171;
+  margin: 0 4px;
+}
+.list-group li a, .copyright a {
+  color: #666666
 }
