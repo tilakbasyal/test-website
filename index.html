@@ -10,8 +10,10 @@
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
     type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="css/font-awesome-min.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <!-- // Add the new slick-theme.css if you want the default styling  -->
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
   <script src="js/bootstrap.min.js"></script>
   <title>Test Task</title>
 </head>
@@ -86,14 +88,14 @@
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
             <div class="welcome-title">
-              <h3 class="text-primary text-center ">Welcome to Xplore</h3>
+              <h3 class="text-center ">Welcome to Xplore</h3>
               <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut laboaliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori.</p>
             </div>
           </div>
         </div>
 
-        <div class="row col-padding-none">
+        <div class="welcome-cards row col-padding-none">
           <div class="col-md-6 col-lg-3 text-center">
             <div class="icon">
               <img src="assets/goals.png" alt="some icons">
@@ -138,7 +140,7 @@
               <img src="assets/about-image.png" alt="about descriptor ">
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="about-experiences col-lg-6">
             <h3>We should NOT be designing experiences that confuse potential .</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori.</p>
@@ -191,7 +193,7 @@
     <!----------------- About Section ends Here  ---------------->
 
     <!-- Screenshot Section  starts here -->
-    <section class=" section-padding screenshot-container container-fluid">
+    <section class=" section-padding ssr container-fluid">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
@@ -205,25 +207,40 @@
 
         <div class="row">
           <div class="col-md-12">
-            <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
+            <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> -->
+                <!-- <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="assets/gallery-1.png" class="d-block" alt="">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                </ol> -->
+                <div class="screenshot-slider-container">
+                  <div>
+                    <img src="assets/gallery-1.png" alt="">
                   </div>
-                  <div class="carousel-item">
-                    <img src="assets/gallery-2.png" class="d-block" alt="">
+                  <div>
+                    <img src="assets/gallery-2.png" alt="">
                   </div>
-                  <div class="carousel-item">
-                    <img src="assets/gallery-4.png" class="d-block" alt="">
+                  <div>
+                    <img src="assets/gallery-4.png" alt="">
+                  </div>
+                  <div>
+                    <img src="assets/gallery-1.png" alt="">
+                  </div>
+                  <div>
+                    <img src="assets/gallery-2.png" alt="">
+                  </div>
+                  <div>
+                    <img src="assets/gallery-4.png" alt="">
+                  </div>
+                  <div>
+                    <img src="assets/gallery-4.png" alt="">
                   </div>
                 </div>
-              </div> -->
-            <h1>Carousel goes here</h1>
+              <!-- </div> -->
           </div>
         </div>
       </div>
@@ -234,25 +251,23 @@
 
 
     <!-- Video Section starts here  -->
-    <section class="video-container container-fluid">
-      <div class="video-text-container">
-        <img src="assets/video-bg.jpg" alt="random text">
-        <div class="overlay">
-          <div class="section-padding container">
-            <div class="col-lg-6">
-              <h3 class="title text-white ">Autoplay is here.</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-              <div class="circular-play-button">
-                <i class="fa fa-play" aria-hidden="true"></i>
+    <section class="video-area section-padding">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6">
+                  <div class="video-text">
+                      <h3 class="text-white">Autoplay video is here</h3>
+                      <div class="text-white">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                      <div class="circular-play-button">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                      </div>
+                  </div>
               </div>
-
-            </div>
           </div>
-        </div>
       </div>
-
-    </section>
+  </section>
     <!-- Video Section starts here  -->
 
 
@@ -262,13 +277,13 @@
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
             <div class="welcome-title">
-              <h3 class="text-primary text-center ">Main Features incuding Facility</h3>
+              <h3 class="text-center ">Main Features incuding Facility</h3>
               <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut laboaliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori.</p>
             </div>
           </div>
         </div>
-        <div class="row d-flex align-items-center">
+        <div class="row d-flex align-items-center features-details">
           <div class="col-lg-6">
             <h3>Conversion rates for e-commerce sites can be measured by looking for the percentage completion rate of
               visitors who start and finish.</h3>
@@ -433,7 +448,7 @@
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
             <div class="welcome-title">
-              <h3 class="text-primary text-center ">Frquently ask & Questions</h3>
+              <h3 class="text-primary text-center ">Frequently ask & Questions</h3>
               <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut laboaliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori.</p>
             </div>
@@ -527,7 +542,7 @@
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
             <div class="welcome-title">
-              <h3 class="text-primary text-center ">Frquently ask & Questions</h3>
+              <h3 class=" text-center ">Frquently ask & Questions</h3>
               <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut laboaliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori.</p>
             </div>
@@ -623,19 +638,19 @@
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
             <div class="welcome-title">
-              <h3 class="text-center ">Digital marketing tips and strategies, delivered straight to your inbox.</h3>
+              <h3 class="text-dark text-center ">Digital marketing tips and strategies, delivered straight to your inbox.</h3>
               <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut laboaliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori.</p>
             </div>
           </div>
         </div>
         <div class="row justify-content-center">
-          <form class="form-inline">
+          <form class="subscription form-inline">
             <div class="form-group mx-sm-3 mb-2">
               <label for="emailAddress" class="sr-only">E-Mail Address</label>
               <input type="text" class="form-control" id="emailAddress" placeholder="E-Mail Address">
             </div>
-            <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+            <button type="submit" class="text-white btn mb-2">Subscribe</button>
           </form>
         </div>
       </div>
@@ -653,15 +668,15 @@
                       <div>
                           <h5>Products</h5>
                           <ul class="list-group">
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Landing Pages</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Contests & Promotions</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Website Popups</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Leads Tracking & Management</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Online Forms</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Marketing Automation</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Email Marketing</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Referral Suite</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">API</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Landing Pages</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Contests & Promotions</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Website Popups</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Leads Tracking & Management</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Online Forms</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Marketing Automation</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Email Marketing</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Referral Suite</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">API</a></li>
                           </ul>
                       </div>
                   </div>
@@ -669,12 +684,12 @@
                       <div>
                           <h5>Company</h5>
                           <ul class="list-group">
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">About Us</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Integrations</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Customer Success Stories</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Affiliates</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Professional Services</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Careers</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">About Us</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Integrations</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Customer Success Stories</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Affiliates</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Professional Services</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Careers</a></li>
                           </ul>
                       </div>
                   </div>
@@ -682,10 +697,10 @@
                       <div>
                           <h5>Contact</h5>
                           <ul class="list-group">
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">VIP Demo</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Support</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Media</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Agencies</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">VIP Demo</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Support</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Media</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Agencies</a></li>
                           </ul>
                       </div>
                   </div>
@@ -693,16 +708,16 @@
                       <div>
                           <h5>Resources</h5>
                           <ul class="list-group">
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Marketing Ebooks</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Wishpond Academy</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Webinars</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Infographics</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Lead Generation Strategies</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Email Drip Campaigns</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Landing Pages Strategies</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Small Business Marketing</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Free Shopify Popup Builder App</a></li>
-                              <li class="list-group-item border-0 pl-0 pr-0"><a href="#">Free WordPress Popup Builder</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Marketing Ebooks</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Wishpond Academy</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Webinars</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Infographics</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Lead Generation Strategies</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Email Drip Campaigns</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Landing Pages Strategies</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Small Business Marketing</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Free Shopify Popup Builder App</a></li>
+                              <li class="list-group-item border-0 pl-0 pr-0 mb-3"><a href="#">Free WordPress Popup Builder</a></li>
                           </ul>
                       </div>
                   </div>
@@ -732,15 +747,46 @@
   </footer>
 
   <!-- Footer section ends  -->
-
-
-
-
-
-
-
-
   </div>
+
+  <!-- <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script> -->
+  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+  <script type="text/javascript" src="js/slick.min.js"></script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      $('.screenshot-slider-container').slick({
+        dots: true,
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
 
 </body>
 

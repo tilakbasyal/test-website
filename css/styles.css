@@ -14,9 +14,13 @@ h5,
 h6 {
   font-weight: 800;
   margin: 0 0 15px;
-  line-height: 1.4em;
   font-family: 'Poppins', sans-serif;
   color: #333333;
+  letter-spacing: 0.5px;
+}
+p, span, li {
+  letter-spacing: 0.5px;
+
 }
 .container-fluid {
   padding-left: 0 !important;
@@ -26,7 +30,7 @@ a:hover {
   text-decoration: none;
 }
 .section-padding {
-  padding: 150px 0;
+  padding: 120px 0;
 }
 /* Navbar style  */
 .logo-text {
@@ -42,23 +46,64 @@ box-shadow: none;
 }
 
 /* Header Style start */
+.header-text h1 {
+  margin-bottom: 28px;
+  font-size: 3rem !important;
+}
+.header-text p {
+  margin-bottom: 42px;
+  font-weight: 500;
+}
 header {
   background: linear-gradient(75deg, rgb(1, 136, 253) 0%, rgb(35, 189, 243) 40%, rgb(78, 180, 254) 41%, rgb(4, 239, 255) 93%, rgb(1, 241, 255) 100%);
 }
 
 .download-button {
-  padding: 15px 42px;
+  padding: 16px 40px;
   border-radius: 100px;
   border: none;
   background-image: linear-gradient(90deg, #1bd9b3 0%, #91d173 100%);
+  font-weight: 500;
 }
 .welcome-title {
   margin-bottom: 64px;
 }
+
+.welcome-title h3 {
+  font-size: 40px;
+  color: #4fb3fe;
+}
+.welcome-title p.text-center {
+  font-size: 14px;
+}
+
+.welcome-cards h6 {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+.welcome-cards p {
+  font-size: 14px;
+}
+
 /* About section  */
 .about-container {
   background-color: 
   #f3f8fc;
+}
+.about-container .about-experiences h3{
+  font-weight: 300;
+}
+.about-experiences p{
+  margin-top:30px;
+  font-weight: 300; 
+}
+.list-group-item{
+  padding-top:0;
+  padding-bottom: 0;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+  opacity: 0.8;
 }
 .about-us-checkboxes {
   background-color: #f3f8fc;
@@ -68,6 +113,35 @@ header {
 }
 .custom-checkbox label {
   font-size: 14px;
+}
+
+ /* Video area  */
+ .video-area {
+  background-image: url('../assets/video-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: scroll;
+  position: relative;
+  z-index: 1;
+}
+.video-area::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:  #000000;
+  opacity: 0.5;
+  z-index: -1;
+}
+.video-text {
+
+  color: 
+
+  #ffffff;
+
 }
 .video-container img {
   width: 100%;
@@ -104,21 +178,38 @@ header {
   background-color: #f3f8fc;
 }
 
+.carousel-indicators {
+  bottom: -24px !important;
+}
 
+.features-details h3{
+  font-weight:400;
+}
+
+
+/* Priceing section  */
 .pricing-container {
   background-image: linear-gradient(45deg, #4fabfd 0%, #4db5fd 51%, #00f1fd 100%);
+}
+.pricing-title h3 {
+  font-weight: 900;
+  font-size: 26px;
+}
+.pricing-title p {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .price-box {
   background-image: linear-gradient(to top, #6dd5ed 0%, #2193af 100%);
   color: white;
   text-align: center;
+  border-radius: 8px;
 }
 
 .price-box-top {
   padding: 40px 40px 90px 40px;
   background: url('../assets/price-header.png') no-repeat scroll center center / calc(100% + 50px) 100%;
-  /* background-image: url('../assets/price-header.png'); */
 }
 
 .price .dollar {
@@ -135,8 +226,15 @@ header {
 .price-box-bottom {
   padding-bottom: 48px;
 }
+.pricing-title .icon {
+  padding-left: 8px;
+}
+.pricing-title a {
+  text-decoration: underline;
+}
 .price-list-main {
   padding: 0;
+  margin-bottom: 40px;
 }
 .price-list-main .price-lists {
   list-style: none;
@@ -149,13 +247,19 @@ header {
   border: none;
   background-image: linear-gradient(90deg, #31d8a7, #87d279 );
 }
+.price-button i {
+  font-size: 18px;
+  padding-right: 8px;
+}
 /* FAQ section  */
 
 .question-title {
   padding: 16px 24px;
   font-size: 18px;
-  color: #666;
-  box-shadow: 0 4px 4px #f2f2f2;
+  color: black;
+  box-shadow: 0 8px 8px #f2f2f2;
+  font-weight: 500;
+  opacity: 0.5;
 }
 
 /* Download the app  */
@@ -166,9 +270,21 @@ ol li {
   margin: 0 8px !important;
   background-color: #666 !important;
 }
+.section-title h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.section-title h3 {
+  font-size: 42px;;
+}
 
 .download-the-app {
   background-image: linear-gradient(to right,#4eaffd 0%, #4db5fd 51%, #00f1fd 100%);
+}
+.download-the-app .section-title p{
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 60px;
 }
 .download-text {
   padding: 120px 0px;
@@ -183,7 +299,7 @@ ol li {
   margin: 12px 12px 0 0;
 }
 .icon-button {
-  padding: 16px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   background-color: #333;
@@ -199,7 +315,7 @@ ol li {
 
 /* boxes  */
 .frequent-ask-again, .footer, .footer li {
-  background-color: #f3f8fc;
+  background-color: #f2f8fc;
 }
 .boxes-container {
   display: flex;
@@ -237,18 +353,110 @@ ol li {
 }
 
 .left-right-button {
-  height: 60px;
+  height: 70px;
+  width: 160px;
+  opacity: 0.3;
   position: relative;
   top: 25%;
-  background-color: #aaa;
-  color: #7b7474;
+  background-color: #e2e8ec;
+  color: #839eb2;
+}
+.left-right-button i {
+  color:  #839eb2;
+  
+  font-size: 16px;;
+
+font-size: 18px !important;
+font-weight: 600;
+}
+
+.subscription input {
+  background-color:#e5eff6;
+padding: 26px 20px;
+border: 0;
+/* color: #546775; */
+border-radius: 4px;
+opacity: 0.5;
+}
+.subscription button {
+  background-color: #4fb3fe;
+  padding: 12px 20px;
 }
 
 /* Footer  */
+.footer {
+  padding-bottom: 0px ;
+}
 .copyright, .social-media a {
   color: #697171;
   margin: 0 4px;
 }
 .list-group li a, .copyright a {
   color: #666666
+}
+.footer li {
+  letter-spacing: 0;
+}
+
+
+.slider {
+  /* width: 50%; */
+  margin: 100px auto;
+}
+
+.slick-slide {
+margin: 0px 20px;
+}
+
+.slick-slide img {
+width: 100%;
+display: inline-block;
+}
+
+.slick-prev:before,
+.slick-next:before {
+color: black;
+}
+
+
+.slick-slide {
+/* transition: all ease-in-out .3s; */
+opacity: .2;
+}
+
+.slick-active {
+opacity: .4;
+transform: scale(1,1);
+
+}
+
+.slick-current {
+opacity: 1;
+/* height: 120%; */
+transform: scale(1.1,1.1);
+margin-top: -48px;
+z-index: 111;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem 0;
+  list-style-type: none;
+}
+.slick-dots li {
+  width: 12px !important;
+  height: 12px !important;
+  margin: 0 0.25rem;
+  background-color: #e2e8ec;
+  border-radius: 50%;
+}
+.slick-dots li button {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50%;
+}
+.slick-dots li.slick-active button {
+  background-color: #666;
 }
